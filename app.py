@@ -15,20 +15,21 @@ def skill_chart(dfQualifiq):
         color=dfQualifiq['QUALIFICATION'],
         text=dfQualifiq['QUALIFICATION'],  
         color_discrete_map=color_map,  
+        width=680
 
     )
                         
     plotQualifiq.update_traces(
         textfont_size=19, 
         textposition="inside", 
-        cliponaxis=False,
+        #cliponaxis=False,
         insidetextanchor="middle",
         hovertemplate=None,
 
     )
 
     plotQualifiq.update_layout(
-        autosize=True,
+        #autosize=True,
     
         hovermode="x unified",
         showlegend=False,
@@ -69,6 +70,7 @@ PAGE_ICON = "📊"
 NAME = "Thales Rudolph"
 DESCRIPTION = """
 Estudante de Data Science - Entuasiasta de decisões data driven!
+♿️ PCD [CID H54-4]
 """
 EMAIL = "rudolphthales1@gmail.com"
 SOCIAL_MEDIA = {
