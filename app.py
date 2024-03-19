@@ -152,10 +152,10 @@ habilidades = st.container(border=True)
 tab1, tab2, tab3, tab4 = habilidades.tabs(['Experiencias e qualificações ', 'Hard Skills', 'Soft Skills', 'Experiências Profissionais', ])
 
 
-dfHard = pd.read_excel(f'{ os.getcwd()  }\\assets\\DADOS\\hard.xlsx')
+dfHard = pd.read_excel(f'{ os.getcwd()  }/assets/DADOS/hard.xlsx')
 dfHard['IMAGEM'] = [os.path.join(os.getcwd(), "assets", "ICONS", f"{qualification}.png") for qualification in dfHard['QUALIFICATION']]
 
-dfSoft = pd.read_excel(f'{ os.getcwd()  }\\assets\\DADOS\\soft.xlsx')
+dfSoft = pd.read_excel(f'{ os.getcwd()  }/assets/DADOS/soft.xlsx')
 dfSoft['IMAGEM'] = [os.path.join(os.getcwd(), "assets", "ICONS", f"{qualification}.png") for qualification in dfSoft['QUALIFICATION']]
 
 
