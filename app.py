@@ -193,56 +193,45 @@ tab1.write(
 
 # --- HARD SKILLS ---
 
-tab2.write(plotHard)
+tab2.plotly_chart(plotHard, use_container_width=True)
 
 # --- SOFT SKILLS ---
 
-tab3.write(plotSoft)
+tab3.plotly_chart(plotSoft, use_container_width=True)
 
 # --- HISTÓRICO DE TRABALHO ---
 
 tab4.write('\n')
 
-# --- TRABALHO 1
-with tab4.expander("**💼 Líder | Projeto Tribos nas Trilhas da Cidadania**"):
 
-    st.write("📅 01/2012 - 10/2015")
+
+# --- TRABALHO 6
+with tab4.expander("**💼 Auxiliar Administrativo | METODO ENGENHARIA**"):     
+   
+    st.write("📅 09/2023  - Atualmente")
     st.write(
         """
-    - ✔️ Representar anualmente a escola em fóruns regionais, elaborando falas e discursos sobre ações que foram feitas ao decorrer do ano. 
-    - ✔️ Planejar as ações e atividades, visando melhorar o ambiente escolar e das comunidades próximas.  
-    - ✔️ Realizar e participar de reuniões semanais para elaborar o planejamento e atividades do grupo, além de
-    motivar os alunos no engajamento do projeto Tribos. 
-
-    """, unsafe_allow_html=True
-    )
-
-# --- TRABALHO 2
-with tab4.expander("**💼 Assistente Adminstrativo  | Unidão Tansportes**"):
-
-    st.write("📅 05/2018 - 01/2019")
-    st.write(
-        """
-    
-    - ✔️ Trabalhar na organização de arquivos de DP e Jurídico
-    - ✔️ Criação de planilhas de controle de RH, DP e processos judiciais automatizadas utilizando de fórmulas e programação VBA
-    - ✔️ Desenvolvimento de Macros (com linguagem VBA) para automatizar processos de dados
-    - ✔️ Preenchimento de informações no ERP da empresa
+    - ✔️ Auxilio no orçamento de obras do setor industrial, recebendo cotações do suprimentos e preenchendo os dados correspondentes
+    - ✔️ Criação planilhas automatizadas para a área de orçamentos
+    - ✔️ Desenvolvimento de ferramentas em Python que auxiliem nos fluxos diários
+    - ✔️ Plataforma de cotações para fornecedores utilizando a biblioteca Streamlit
+    - ✔️ Concientizar a equipe nos fluxos corretos de tratamento e estruturação de dados
 
     """
     )
 
-# --- TRABALHO 3
-with tab4.expander("**💼 Auxiliar de Frota  | RODALOG SOLUÇÕES EM LOGISTICA**"):    
 
-    st.write("📅 01/2019 - 06/2020")
+# --- TRABALHO 5
+with tab4.expander("**💼 Autônomo  | Compositor Musical (MUGUES)**"):      
+    
+    st.write("📅 03/2021 - 09/2023")
     st.write(
         """
-    - ✔️ Auxiliar todas as áreas com suas respectivas demandas de dados: RH, DP, produtividade, gestão, manutenção e segurança
-    - ✔️ Trabalhar em todos os indicadores em busca da sustentabilidade do VPO na AMBEV
-    - ✔️ Inserir informações de frota e de financeiro no sistema TOTVS da empresa
-    - ✔️ Participar de reuniões diárias, semanais e mensais para discutir indicadores e ações para nossa unidade
-    - ✔️ Criar dashboards interativos e reaproveitáveis para todas as áreas utilizando do meu conhecimento de macros, VBA e fórmulas matriciais.
+    - ✔️ Negociação com clientes internacionais para desenvolvimento de trilhas personalizadas
+    - ✔️ Mixagem e tratamento de áudio de trilhas
+    - ✔️ Negociação sobre direitos comerciais
+    - ✔️ Postagem das músicas nas plataformas de streaming
+    - ✔️ Marketing e desenvolvimento de marca pessoal
 
     """
     )
@@ -262,34 +251,50 @@ with tab4.expander("**💼 Gerente de produção  | DRAWN MASK (YOUTUBER)**"):
     """
     )
 
-# --- TRABALHO 5
-with tab4.expander("**💼 Autônomo  | Compositor Musical (MUGUES)**"):      
-    
-    st.write("📅 03/2021 - 09/2023")
+
+# --- TRABALHO 3
+with tab4.expander("**💼 Auxiliar de Frota  | RODALOG SOLUÇÕES EM LOGISTICA**"):    
+
+    st.write("📅 01/2019 - 06/2020")
     st.write(
         """
-    - ✔️ Negociação com clientes internacionais para desenvolvimento de trilhas personalizadas
-    - ✔️ Mixagem e tratamento de áudio de trilhas
-    - ✔️ Negociação sobre direitos comerciais
-    - ✔️ Postagem das músicas nas plataformas de streaming
-    - ✔️ Marketing e desenvolvimento de marca pessoal
+    - ✔️ Auxiliar todas as áreas com suas respectivas demandas de dados: RH, DP, produtividade, gestão, manutenção e segurança
+    - ✔️ Trabalhar em todos os indicadores em busca da sustentabilidade do VPO na AMBEV
+    - ✔️ Inserir informações de frota e de financeiro no sistema TOTVS da empresa
+    - ✔️ Participar de reuniões diárias, semanais e mensais para discutir indicadores e ações para nossa unidade
+    - ✔️ Criar dashboards interativos e reaproveitáveis para todas as áreas utilizando do meu conhecimento de macros, VBA e fórmulas matriciais.
 
     """
     )
 
-# --- TRABALHO 6
-with tab4.expander("**💼 Auxiliar Administrativo | METODO ENGENHARIA**"):     
-   
-    st.write("📅 09/2023  - Atualmente")
+
+# --- TRABALHO 2
+with tab4.expander("**💼 Assistente Adminstrativo  | Unidão Tansportes**"):
+
+    st.write("📅 05/2018 - 01/2019")
     st.write(
         """
-    - ✔️ Auxilio no orçamento de obras do setor industrial, recebendo cotações do suprimentos e preenchendo os dados correspondentes
-    - ✔️ Criação planilhas automatizadas para a área de orçamentos
-    - ✔️ Desenvolvimento de ferramentas em Python que auxiliem nos fluxos diários
-    - ✔️ Plataforma de cotações para fornecedores utilizando a biblioteca Streamlit
-    - ✔️ Concientizar a equipe nos fluxos corretos de tratamento e estruturação de dados
+    
+    - ✔️ Trabalhar na organização de arquivos de DP e Jurídico
+    - ✔️ Criação de planilhas de controle de RH, DP e processos judiciais automatizadas utilizando de fórmulas e programação VBA
+    - ✔️ Desenvolvimento de Macros (com linguagem VBA) para automatizar processos de dados
+    - ✔️ Preenchimento de informações no ERP da empresa
 
     """
+    )
+
+# --- TRABALHO 1
+with tab4.expander("**💼 Líder | Projeto Tribos nas Trilhas da Cidadania**"):
+
+    st.write("📅 01/2012 - 10/2015")
+    st.write(
+        """
+    - ✔️ Representar anualmente a escola em fóruns regionais, elaborando falas e discursos sobre ações que foram feitas ao decorrer do ano. 
+    - ✔️ Planejar as ações e atividades, visando melhorar o ambiente escolar e das comunidades próximas.  
+    - ✔️ Realizar e participar de reuniões semanais para elaborar o planejamento e atividades do grupo, além de
+    motivar os alunos no engajamento do projeto Tribos. 
+
+    """, unsafe_allow_html=True
     )
 
 st.subheader("Projetos")
