@@ -15,22 +15,21 @@ def skill_chart(dfQualifiq):
         color=dfQualifiq['QUALIFICATION'],
         text=dfQualifiq['QUALIFICATION'],  
         color_discrete_map=color_map,  
-        width=680
+        width=690
 
     )
                         
     plotQualifiq.update_traces(
         textfont_size=19, 
         textposition="inside", 
-        #cliponaxis=False,
+        cliponaxis=False,
         insidetextanchor="middle",
         hovertemplate=None,
 
     )
 
     plotQualifiq.update_layout(
-        #autosize=True,
-    
+        autosize=True,
         hovermode="x unified",
         showlegend=False,
         xaxis_title=None, 
@@ -99,7 +98,21 @@ profile_pic = Image.open(profile_pic)
 
 
 # --- HERO SECTION ---
-col1, col2 = st.columns(2, gap="small")
+col1, col2 = st.columns(2, gap='small')
+st.markdown(
+    """
+    <style>
+        div [data-testid=stImage]{
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+    </style>
+    """, unsafe_allow_html=True
+)
+
 with col1:
     st.image(profile_pic, width=230)
 
@@ -107,7 +120,7 @@ with col2:
     st.title(NAME)
     st.write(DESCRIPTION)
     st.download_button(
-        label=" 📄 Download currículo completo",
+        label=" 📄 Download currículo",
         data=PDFbyte,
         file_name=resume_file.name,
         mime="application/octet-stream",
