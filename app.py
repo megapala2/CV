@@ -193,7 +193,7 @@ tab1.write(
 - \n
                                                                          
                                                                         
-- ✔️ 4 anos de experiência em extração e consolidação de bases de dados;
+- ✔️ 4 anos de experiência em processo ETL de pipeline de dados;
 - ✔️ Conhecimento avançado de Excel e Python;
 - ✔️ Entendimento de técnicas e regulamentos normativos de dados;
 - ✔️ Facilidade e velocidade em aprender;
