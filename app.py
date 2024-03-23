@@ -78,8 +78,8 @@ SOCIAL_MEDIA = {
     "Spotify": ["https://open.spotify.com/intl-pt/artist/4FnGzOZznKXkYlc09miMkU", [os.path.join(os.getcwd(), "assets", "ICONS", "SPOTIFY.png")]]
 }
 PROJECTS = {
+    "🏆 Miband Dashboard": "https://mibandfit.streamlit.app/",
     "🏆 SIO - Sistema Integrado de Orçamentos": "https://www.linkedin.com/feed/update/urn:li:activity:7174088031795044353/",
-    "🏆 Dashboard de vendas para lojas de varejo": "https://www.linkedin.com/in/thales-rudolph-b7511a16a/",
     "🏆 Planilhas automatizadas em VBA": "https://www.linkedin.com/in/thales-rudolph-b7511a16a/"
 
 }
