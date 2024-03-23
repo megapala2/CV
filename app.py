@@ -80,7 +80,7 @@ SOCIAL_MEDIA = {
 PROJECTS = {
     "🏆 Miband Dashboard": "https://mibandfit.streamlit.app/",
     "🏆 SIO - Sistema Integrado de Orçamentos": "https://www.linkedin.com/feed/update/urn:li:activity:7174088031795044353/",
-    "🏆 Planilhas automatizadas em VBA": "https://www.linkedin.com/in/thales-rudolph-b7511a16a/"
+    "🏆 Planilhas automatizadas em VBA": "https://docs.google.com/spreadsheets/d/187A8u4LqtqyJae6y_aycerI2-p1lHot1/edit?usp=sharing&ouid=112827695103174479661&rtpof=true&sd=true"
 
 }
 
