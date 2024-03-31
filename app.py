@@ -78,10 +78,26 @@ SOCIAL_MEDIA = {
     "Spotify": ["https://open.spotify.com/intl-pt/artist/4FnGzOZznKXkYlc09miMkU", [os.path.join(os.getcwd(), "assets", "ICONS", "SPOTIFY.png")]]
 }
 PROJECTS = {
-    "🏆 Miband Dashboard": "https://mibandfit.streamlit.app/",
-    "🏆 SIO - Sistema Integrado de Orçamentos": "https://www.linkedin.com/feed/update/urn:li:activity:7174088031795044353/",
-    "🏆 Planilhas automatizadas em VBA": "https://docs.google.com/spreadsheets/d/187A8u4LqtqyJae6y_aycerI2-p1lHot1/edit?usp=sharing&ouid=112827695103174479661&rtpof=true&sd=true"
-
+    "📊 WorsPlacesToWork Dashboard": {
+        "description": "O projeto contabiliza os dados da planilha que viralizou em março de 2024 das empresas tóxicas do Brasil, ela contabiliza as empresas que mais aparecem nessa planilha pública",
+        "link": "https://worstplacetowork.streamlit.app/",
+        "technologies": ["Pandas", "Streamlit", "fuzzywuzzy", "plotlyexpress"]
+    },
+    "📊 Miband Dashboard": {
+        "description": "O projeto limpa dados que são coletados pelo meu smartwatch!",
+        "link": "https://mibandfit.streamlit.app/",
+        "technologies": ["Pandas", "Streamlit", "plotlyexpress"]
+    },
+    "📊 SIO - Sistema Integrado de Orçamentos": {
+        "description": "O projeto visa desenvolver um sistema de orçamento de obras em python!",
+        "link": "https://www.linkedin.com/feed/update/urn:li:activity:7174088031795044353/",
+        "technologies": ["Pandas", "Streamlit", "aggrid", "googlesheetsapi", "MYSQL"]
+    },
+    "📊 Planilhas automatizadas em VBA": {
+        "description": "O projeto é uma planilha automatizada em VBA para diversos tipos de indicadores",
+        "link": "https://docs.google.com/spreadsheets/d/187A8u4LqtqyJae6y_aycerI2-p1lHot1/edit?usp=sharing&ouid=112827695103174479661&rtpof=true&sd=true",
+        "technologies": ["VBA", "Excel"]
+    }
 }
 
 
@@ -164,7 +180,7 @@ st.write('\n')
 st.write('\n')
 habilidades = st.container(border=True)
 
-tab1, tab2, tab3, tab4 = habilidades.tabs(['Experiencias e qualificações ', 'Hard Skills', 'Soft Skills', 'Experiências Profissionais', ])
+tab1, tab2, tab3, tab4, tab5 = habilidades.tabs(['Experiencias e qualificações ', 'Projetos' ,'Hard Skills', 'Soft Skills', 'Experiências Profissionais', ])
 
 
 dfHard = pd.read_json(f'{ os.getcwd()  }/assets/DADOS/hard.json')
@@ -203,23 +219,36 @@ tab1.write(
 """
 )
 
+# --- PROJETOS ---
+
+for project, details in PROJECTS.items():
+    with tab2.expander(f'**{project}**'):
+        st.write('---------------------')
+        st.write(f"**✏️ Descrição**")
+        st.write(details['description'])
+        st.write('---------------------')
+        st.write("**💻 Tecnologias**")
+        st.write(", ".join(details["technologies"]))
+        st.write('---------------------')
+        st.write(f"**[🔗 LINK PARA O PROJETO 🔗]({details['link']})**")
+
 
 # --- HARD SKILLS ---
 
-tab2.plotly_chart(plotHard, use_container_width=True)
+tab3.plotly_chart(plotHard, use_container_width=True)
 
 # --- SOFT SKILLS ---
 
-tab3.plotly_chart(plotSoft, use_container_width=True)
+tab4.plotly_chart(plotSoft, use_container_width=True)
 
 # --- HISTÓRICO DE TRABALHO ---
 
-tab4.write('\n')
+tab5.write('\n')
 
 
 
 # --- TRABALHO 6
-with tab4.expander("**💼 Auxiliar Administrativo | METODO ENGENHARIA**"):     
+with tab5.expander("**💼 Auxiliar Administrativo | METODO ENGENHARIA**"):     
    
     st.write("📅 09/2023  - Atualmente")
     st.write(
@@ -235,7 +264,7 @@ with tab4.expander("**💼 Auxiliar Administrativo | METODO ENGENHARIA**"):
 
 
 # --- TRABALHO 5
-with tab4.expander("**💼 Autônomo  | Compositor Musical (MUGUES)**"):      
+with tab5.expander("**💼 Autônomo  | Compositor Musical (MUGUES)**"):      
     
     st.write("📅 03/2021 - 09/2023")
     st.write(
@@ -250,7 +279,7 @@ with tab4.expander("**💼 Autônomo  | Compositor Musical (MUGUES)**"):
     )
 
 # --- TRABALHO 4
-with tab4.expander("**💼 Gerente de produção  | DRAWN MASK (YOUTUBER)**"):      
+with tab5.expander("**💼 Gerente de produção  | DRAWN MASK (YOUTUBER)**"):      
     
     st.write("📅 06/2020 - 03/2021")
     st.write(
@@ -266,7 +295,7 @@ with tab4.expander("**💼 Gerente de produção  | DRAWN MASK (YOUTUBER)**"):
 
 
 # --- TRABALHO 3
-with tab4.expander("**💼 Auxiliar de Frota  | RODALOG SOLUÇÕES EM LOGISTICA**"):    
+with tab5.expander("**💼 Auxiliar de Frota  | RODALOG SOLUÇÕES EM LOGISTICA**"):    
 
     st.write("📅 01/2019 - 06/2020")
     st.write(
@@ -282,7 +311,7 @@ with tab4.expander("**💼 Auxiliar de Frota  | RODALOG SOLUÇÕES EM LOGISTICA*
 
 
 # --- TRABALHO 2
-with tab4.expander("**💼 Assistente Adminstrativo  | Unidão Tansportes**"):
+with tab5.expander("**💼 Assistente Adminstrativo  | Unidão Tansportes**"):
 
     st.write("📅 05/2018 - 01/2019")
     st.write(
@@ -297,7 +326,7 @@ with tab4.expander("**💼 Assistente Adminstrativo  | Unidão Tansportes**"):
     )
 
 # --- TRABALHO 1
-with tab4.expander("**💼 Líder | Projeto Tribos nas Trilhas da Cidadania**"):
+with tab5.expander("**💼 Líder | Projeto Tribos nas Trilhas da Cidadania**"):
 
     st.write("📅 01/2012 - 10/2015")
     st.write(
@@ -310,7 +339,3 @@ with tab4.expander("**💼 Líder | Projeto Tribos nas Trilhas da Cidadania**"):
     """, unsafe_allow_html=True
     )
 
-st.subheader("Projetos")
-st.write("---")
-for project, link in PROJECTS.items():
-    st.write(f"[{project}]({link})")
