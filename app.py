@@ -16,8 +16,7 @@ def skill_chart(dfQualifiq):
         text=dfQualifiq['QUALIFICATION'],  
         color_discrete_map=color_map,  
         width=690,
-        
-
+       
     )
                         
     plotQualifiq.update_traces(
@@ -54,6 +53,7 @@ def skill_chart(dfQualifiq):
             yanchor="middle",
             sizex=1,
             sizey=1,
+            
         
         )
     return plotQualifiq
@@ -179,7 +179,7 @@ for index, (platform, values) in enumerate(SOCIAL_MEDIA.items()):
 
 st.write('\n')
 st.write('\n')
-habilidades = st.container(border=True, height=500)
+habilidades = st.container(border=True)
 
 tab1, tab2, tab3, tab4, tab5 = habilidades.tabs(['Experiencias e qualificações ', 'Projetos' ,'Hard Skills', 'Soft Skills', 'Experiências Profissionais', ])
 
@@ -340,3 +340,16 @@ with tab5.expander("**💼 Líder | Projeto Tribos nas Trilhas da Cidadania**"):
     """, unsafe_allow_html=True
     )
 
+st.subheader('Perfil Profissional')
+st.write('----------------------------------------')
+st.write("""
+         Sou um jovem de 24 anos, quero me inserir no mercado na área de análise de dados! Eu aprendo rápido e sempre foco na base teórica dos assuntos,
+         por isso tenho facilidade de me adaptar as mais diversas ferramentas. 
+         
+         Visualização de dados ou ETL, tenho confiança em me adaptar as ferramentas, pois entendo da base teórica de dados!
+
+         No momento estou me especializando em BIG DATA e no tempo livre trabalhando com RAG (Retrieval Augmented Generation) e em como utilizar LLMs de mandeira eficiente para resolver
+         questões de dados!
+
+         
+         """)
