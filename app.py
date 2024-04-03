@@ -179,7 +179,7 @@ for index, (platform, values) in enumerate(SOCIAL_MEDIA.items()):
 
 st.write('\n')
 st.write('\n')
-habilidades = st.container(border=True, height=800)
+habilidades = st.container(border=True, height=500)
 
 tab1, tab2, tab3, tab4, tab5 = habilidades.tabs(['Experiencias e qualificações ', 'Projetos' ,'Hard Skills', 'Soft Skills', 'Experiências Profissionais', ])
 
