@@ -15,7 +15,8 @@ def skill_chart(dfQualifiq):
         color=dfQualifiq['QUALIFICATION'],
         text=dfQualifiq['QUALIFICATION'],  
         color_discrete_map=color_map,  
-        width=690
+        width=690,
+        
 
     )
                         
@@ -235,11 +236,11 @@ for project, details in PROJECTS.items():
 
 # --- HARD SKILLS ---
 
-tab3.plotly_chart(plotHard, use_container_width=True)
+tab3.plotly_chart(plotHard, use_container_width=True, static=True)
 
 # --- SOFT SKILLS ---
 
-tab4.plotly_chart(plotSoft, use_container_width=True)
+tab4.plotly_chart(plotSoft, use_container_width=True, static=True)
 
 # --- HISTÓRICO DE TRABALHO ---
 
