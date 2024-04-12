@@ -248,97 +248,62 @@ tab5.write('\n')
 
 
 
-# --- TRABALHO 6
+# --- TRABALHO 1
 with tab5.expander("**💼 Auxiliar Administrativo | METODO ENGENHARIA**"):     
    
     st.write("📅 09/2023  - Atualmente")
     st.write(
         """
-    - ✔️ Auxilio no orçamento de obras do setor industrial, recebendo cotações do suprimentos e preenchendo os dados correspondentes
-    - ✔️ Criação planilhas automatizadas para a área de orçamentos
-    - ✔️ Desenvolvimento de ferramentas em Python que auxiliem nos fluxos diários
-    - ✔️ Plataforma de cotações para fornecedores utilizando a biblioteca Streamlit
-    - ✔️ Concientizar a equipe nos fluxos corretos de tratamento e estruturação de dados
-
-    """
-    )
-
-
-# --- TRABALHO 5
-with tab5.expander("**💼 Autônomo  | Compositor Musical (MUGUES)**"):      
-    
-    st.write("📅 03/2021 - 09/2023")
-    st.write(
-        """
-    - ✔️ Negociação com clientes internacionais para desenvolvimento de trilhas personalizadas
-    - ✔️ Mixagem e tratamento de áudio de trilhas
-    - ✔️ Negociação sobre direitos comerciais
-    - ✔️ Postagem das músicas nas plataformas de streaming
-    - ✔️ Marketing e desenvolvimento de marca pessoal
-
-    """
-    )
-
-# --- TRABALHO 4
-with tab5.expander("**💼 Gerente de produção  | DRAWN MASK (YOUTUBER)**"):      
-    
-    st.write("📅 06/2020 - 03/2021")
-    st.write(
-        """
-    - ✔️ Liderar equipe de 5+ editores para cronograma editorial de vídeos
-    - ✔️ Desenvolver estratégias para diminuição da rotatividade de editores do canal
-    - ✔️ Negociação com marcas para parcerias comerciais
-    - ✔️ Planejamento estratégico de lançamento dos vídeos
-    - ✔️ Gerenciar o pagamento dos editores
-
-    """
-    )
-
-
-# --- TRABALHO 3
-with tab5.expander("**💼 Auxiliar de Frota  | RODALOG SOLUÇÕES EM LOGISTICA**"):    
-
-    st.write("📅 01/2019 - 06/2020")
-    st.write(
-        """
-    - ✔️ Auxiliar todas as áreas com suas respectivas demandas de dados: RH, DP, produtividade, gestão, manutenção e segurança
-    - ✔️ Trabalhar em todos os indicadores em busca da sustentabilidade do VPO na AMBEV
-    - ✔️ Inserir informações de frota e de financeiro no sistema TOTVS da empresa
-    - ✔️ Participar de reuniões diárias, semanais e mensais para discutir indicadores e ações para nossa unidade
-    - ✔️ Criar dashboards interativos e reaproveitáveis para todas as áreas utilizando do meu conhecimento de macros, VBA e fórmulas matriciais.
+    - ✔️ Desenvolvimento de soluções de BI para o setor de orçamentos;
+    - ✔️ Desenvolvimento do SIO (sistema integrado de orçamentos) para auxiliar o processo interno de orçamentos, criando uma aplicação ;
+          Python que conecta em um banco de dados, fazendo o front-end para cada etapa do processo;
+    - ✔️ Apresentações e reuniões com o time para demonstrar boas práticas na área de dados;
+    - ✔️ Procura e desenvolvimento de novas tecnologias de dados para auxiliar na tomada de decisão;
+    - ✔️ Concientizar a equipe nos fluxos corretos de tratamento e estruturação de dados.
 
     """
     )
 
 
 # --- TRABALHO 2
+with tab5.expander("**💼 Auxiliar de Frota  | RODALOG SOLUÇÕES EM LOGISTICA**"):    
+
+    st.write("📅 01/2019 - 06/2020")
+    st.write(
+        """
+    - ✔️ Desenvolver pipelines e dataviz para as áreas da unidade: Segurança, manutenção, produtividade, RH, etc. 
+          Resultando em melhoras de 70% nos KPIs de segurança, diminuição de custos de 30% no consumo de combustível 
+          e melhora de 100% em KPIs produtividade perante o encontro de diversos pontos de melhoria;
+    - ✔️ Apresentação de relatórios de forma diária, semanal e mensal para o parceiro AMBEV;
+    - ✔️ Capacitação para os analistas de cada área em como trabalhar com dados de forma mais eficiente;
+    - ✔️ Desenvolvimento RPA para diversas rotinas administrativas (extração de arquivos, preenchimento de formulários);
+    - ✔️ Apresentação da parte de dados em auditorias internas mantendo a qualidade VPO;
+    - ✔️ Ações nível Brasil com o parceiro AMBEV para melhorar KPIs já existentes.
+
+    """
+    )
+
+
+# --- TRABALHO 3
 with tab5.expander("**💼 Assistente Adminstrativo  | Unidão Tansportes**"):
 
     st.write("📅 05/2018 - 01/2019")
     st.write(
         """
     
-    - ✔️ Trabalhar na organização de arquivos de DP e Jurídico
-    - ✔️ Criação de planilhas de controle de RH, DP e processos judiciais automatizadas utilizando de fórmulas e programação VBA
-    - ✔️ Desenvolvimento de Macros (com linguagem VBA) para automatizar processos de dados
-    - ✔️ Preenchimento de informações no ERP da empresa
+    - ✔️ Digitalização dos arquivos de DP e jurídico com controle interno sobre cada documento utilizando Excel;
+    - ✔️ Criação de planilhas de controle de processos judiciais automatizadas utilizando de fórmulas e programação VBA, 
+          onde são demonstrados os principais dados em dashboards interativos;
+    - ✔️ Desenvolver planilhas automáticas e padronizadas para os indicadores de DP/RH, 
+          além de mesclar todas as filiais em uma única planilha com filtro e gráfico dinâmicos;
+    - ✔️ Desenvolvimento de Macros (com linguagem VBA) para RPA, onde seja possível automatizar trabalhos de inserção ou formatação de dados;
+    - ✔️ Atender motoristas e requisitar assinaturas e documentos para os mesmos, além de checar incongruências nas informações;
+    - ✔️ Checar inconsistências de dados no sistema.
 
     """
     )
 
-# --- TRABALHO 1
-with tab5.expander("**💼 Líder | Projeto Tribos nas Trilhas da Cidadania**"):
 
-    st.write("📅 01/2012 - 10/2015")
-    st.write(
-        """
-    - ✔️ Representar anualmente a escola em fóruns regionais, elaborando falas e discursos sobre ações que foram feitas ao decorrer do ano. 
-    - ✔️ Planejar as ações e atividades, visando melhorar o ambiente escolar e das comunidades próximas.  
-    - ✔️ Realizar e participar de reuniões semanais para elaborar o planejamento e atividades do grupo, além de
-    motivar os alunos no engajamento do projeto Tribos. 
-
-    """, unsafe_allow_html=True
-    )
 
 st.subheader('Perfil Profissional')
 st.write('----------------------------------------')
