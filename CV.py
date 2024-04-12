@@ -313,7 +313,7 @@ st.write("""
          
          Visualização de dados ou ETL, tenho confiança em me adaptar as ferramentas, pois entendo da base teórica de dados!
 
-         No momento estou me especializando em BIG DATA e no tempo livre trabalhando com RAG (Retrieval Augmented Generation) e em como utilizar LLMs de mandeira eficiente para resolver
+         No momento estou me especializando em BIG DATA e no tempo livre trabalhando com RAG (Retrieval Augmented Generation) e em como utilizar LLMs de maneira eficiente para resolver
          questões de dados!
 
          
