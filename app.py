@@ -99,11 +99,7 @@ PROJECTS = {
         "link": "https://www.linkedin.com/feed/update/urn:li:activity:7174088031795044353/",
         "technologies": ["Pandas", "Streamlit", "aggrid", "googlesheetsapi", "MYSQL"]
     },
-    "📊 Planilhas automatizadas em VBA": {
-        "description": "O projeto é uma planilha automatizada em VBA para diversos tipos de indicadores",
-        "link": "https://docs.google.com/spreadsheets/d/187A8u4LqtqyJae6y_aycerI2-p1lHot1/edit?usp=sharing&ouid=112827695103174479661&rtpof=true&sd=true",
-        "technologies": ["VBA", "Excel"]
-    }
+    
 }
 
 
