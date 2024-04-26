@@ -79,6 +79,11 @@ SOCIAL_MEDIA = {
     "Spotify": ["https://open.spotify.com/intl-pt/artist/4FnGzOZznKXkYlc09miMkU", [os.path.join(os.getcwd(), "assets", "ICONS", "SPOTIFY.png")]]
 }
 PROJECTS = {
+    "📊 Dashboard PCDs Online Brasil": {
+        "description": "O projeto é um dashboard de uma base de currículos de candidatos PCD com a intuição de ajudar recrutadores a acharem candidatos ideais",
+        "link": "https://pcdonlinebrasil.streamlit.app/",
+        "technologies": ["Python", "Streamlit", "LGPD", "Pandas", "googlesheetsapi"]
+    },
     "📊 WorsPlacesToWork Dashboard": {
         "description": "O projeto contabiliza os dados da planilha que viralizou em março de 2024 das empresas tóxicas do Brasil, ela contabiliza as empresas que mais aparecem nessa planilha pública",
         "link": "https://worstplacetowork.streamlit.app/",

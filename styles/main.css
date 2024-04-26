@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-* {font-family: 'Readex Pro';}
-
+* {font-family: 'Montserrat';}
 
 
 a {
@@ -22,6 +21,42 @@ ul {list-style-type: none;}
 hr {
     margin-top: 0px;
     margin-bottom: 5%;
+}
+
+.st-emotion-cache-1v0mbdj img {
+    width: 200px; /* Modifique a largura conforme necessário */
+}
+
+.st-emotion-cache-1rja0mm {
+    display: none;
+}
+
+.stPlotlyChart path {
+    pointer-events: none !important;
+   
+}
+
+.stFullScreenFrame path {
+    pointer-events: none !important;
+
+}
+
+.drag { /* Desativa todas as interações com o gráfico PLOTLY*/
+    pointer-events: none !important;
+  }
+
+.modebar-container { /* Desativa a barra de menus que o plotly deixa no gráfico*/
+    display: none;
+}
+
+.st-emotion-cache-1pyb3s0 { /* Esconde o scroll do container na logo*/
+    overflow: hidden;
+}
+
+.st-emotion-cache-2wmrxa  {
+    display: none !important;
+    visibility: none !important;
+    pointer-events: none !important;
 }
 
 #MainMenu {visibility: hidden;}
