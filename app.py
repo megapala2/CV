@@ -69,7 +69,7 @@ PAGE_TITLE = "Currículo | Thales Rudolph | ♿️ PCD [CID H54-4]"
 PAGE_ICON = "📊"
 NAME = "Thales Rudolph"
 DESCRIPTION = """
-Estudante de Data Science - Entuasiasta de decisões data driven!
+Analista de dados
 ♿️ PCD [CID H54-4]
 """
 EMAIL = "rudolphthales1@gmail.com"
